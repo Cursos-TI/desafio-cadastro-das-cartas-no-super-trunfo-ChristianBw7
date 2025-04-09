@@ -43,11 +43,11 @@ int main() {
     
     printf("Digite sua Área: \n");
     scanf("%f", &area1);
-    printf("Área: %.3f\n", area1);
+    printf("Área: %.3f km²\n", area1);
 
     printf("Digite seu PIB: \n");
     scanf("%f", &pib1);
-    printf("PIB: %f\n", pib1);
+    printf("PIB: %f Bilhões\n", pib1);
 
     printf("Digite os pontos turisticos: \n");
     scanf("%d", &turisticos1);
@@ -80,11 +80,11 @@ int main() {
     
     printf("Digite sua Área: \n");
     scanf("%f", &area2);
-    printf("Área: %.3f\n", area2);
+    printf("Área: %.3f km²\n", area2);
 
     printf("Digite seu PIB: \n");
     scanf("%f", &pib2);
-    printf("PIB: %f\n", pib2);
+    printf("PIB: %f Bilhões \n", pib2);
 
     printf("Digite os pontos turisticos: \n");
     scanf("%d", &turisticos2);
