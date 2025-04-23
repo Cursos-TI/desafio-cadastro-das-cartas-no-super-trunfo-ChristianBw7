@@ -26,14 +26,14 @@ int main() {
     float inverso_densidade_pop2;
     long double super_poder2;
     
-
+    // Lendo os dados da carta 1
     printf("Carta1\n");
     
     printf("Digite seu estado: ");
     scanf("%s", estado1);
 
     printf("Digite o código:\n ");
-    scanf("%s", &codigo1);
+    scanf("%s", codigo1);
 
     printf("Digite sua cidade: \n");
     scanf("%s", cidade1);
@@ -50,28 +50,28 @@ int main() {
     printf("Digite os pontos turisticos: \n");
     scanf("%d", &turisticos1);
     
-    densidade_pop1 = (populacao1 / area1);
-
-    pib_per_capita1 = (pib1 / populacao1);
 
     //Cálculos 1
+    densidade_pop1 = (float)populacao1 / area1;
 
-    inverso_densidade_pop1 = 1 / densidade_pop1;
+    pib_per_capita1 = pib1 / populacao1;
 
-    super_poder1 = populacao1 + area1 + pib1 + (float) turisticos1 +
+    inverso_densidade_pop1 = (densidade_pop1 > 0) ? (1 / densidade_pop1) : 0;
+
+    super_poder1 = populacao1 + area1 + pib1 + (float)turisticos1 +
     pib_per_capita1 + inverso_densidade_pop1;
 
 
 
 
-
+    // Lendo os dados da carta 2
     printf("Carta2\n");
     
     printf("Digite seu estado: ");
     scanf("%s", estado2);
     
     printf("Digite o código:\n ");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
 
     printf("Digite sua cidade: \n");
     scanf("%s", cidade2);
@@ -88,22 +88,21 @@ int main() {
     printf("Digite os pontos turisticos: \n");
     scanf("%d", &turisticos2);
     
-    densidade_pop2 = (populacao2 / area2);
-
-    pib_per_capita2 = (pib2 / populacao2);
 
     //Cálculos 2
+    densidade_pop2 = (float)populacao2 / area2;
 
-    inverso_densidade_pop2 = 1 / densidade_pop2;
+    pib_per_capita2 = pib2 / populacao2;
 
-    super_poder2 = populacao2 + area2 + pib2 + (float) turisticos2 +
+    inverso_densidade_pop1 = (densidade_pop1 > 0) ? (1 / densidade_pop1) : 0;
+
+    super_poder2 = populacao2 + area2 + pib2 + (float)turisticos2 +
     pib_per_capita2 + inverso_densidade_pop2;
 
 
 
 
      // Exibição dos Dados das Cartas:
-
      printf("\n--- Dados da Carta 1 ---\n");
 
      printf("Estado: %s\n", estado1);
@@ -124,7 +123,7 @@ int main() {
 
      printf("PIB per Capita: %f reais \n", pib_per_capita1);
 
-     printf("Super Poder: %.3lf pontos\n", super_poder1);
+     printf("Super Poder: %.3Lf pontos\n", super_poder1);
 
 
 
@@ -149,7 +148,7 @@ int main() {
 
      printf("PIB per Capita: %f reais \n", pib_per_capita2);
 
-     printf("Super Poder: %.3lf pontos\n", super_poder2);
+     printf("Super Poder: %.3Lf pontos\n", super_poder2);
  
  
  
