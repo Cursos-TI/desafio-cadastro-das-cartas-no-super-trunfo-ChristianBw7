@@ -111,7 +111,7 @@ int main() {
  
      printf("Cidade: %s\n", cidade1);
  
-     printf("População: %d\n", populacao1);
+     printf("População: %d hab\n", populacao1);
  
      printf("Área: %.2f km² \n", area1);
  
@@ -136,7 +136,7 @@ int main() {
  
      printf("Cidade: %s\n", cidade2);
  
-     printf("População: %d\n", populacao2);
+     printf("População: %d hab\n", populacao2);
  
      printf("Área: %.2f km²\n", area2);
  
@@ -149,6 +149,16 @@ int main() {
      printf("PIB per Capita: %f reais \n", pib_per_capita2);
 
      printf("Super Poder: %.3Lf pontos\n", super_poder2);
+
+     //Combate das cartas 
+     printf("\n---Combate das cartas---\n");
+     
+     if (populacao1 > populacao2){
+        printf("População: Carta 1 venceu!\n");
+    } else {
+        printf("População: Carta 2 venceu!\n");
+    }
+    
  
  
  
